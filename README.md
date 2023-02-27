@@ -9,20 +9,20 @@ Once the project is forked, type in npm i and npm start in the terminal so you c
 The API endpoints are as follows:
 
 Thoughts
-GET /api/thoughts: Get all thoughts
-GET /api/thoughts/:thoughtId: Get a single thought by its ID
-POST /api/thoughts: Create a new thought
-PUT /api/thoughts/:thoughtId: Update a thought by its ID
-DELETE /api/thoughts/:thoughtId: Delete a thought by its ID
-POST /api/thoughts/:thoughtId/reactions: Add a reaction to a thought
-DELETE /api/thoughts/:thoughtId/reactions/:reactionId: Remove a reaction from a thought
+- GET /api/thoughts: Get all thoughts
+- GET /api/thoughts/:thoughtId: Get a single thought by its ID
+- POST /api/thoughts: Create a new thought
+- PUT /api/thoughts/:thoughtId: Update a thought by its ID
+- DELETE /api/thoughts/:thoughtId: Delete a thought by its ID
+- POST /api/thoughts/:thoughtId/reactions: Add a reaction to a thought
+- DELETE /api/thoughts/:thoughtId/reactions/:reactionId: Remove a reaction from a thought
 
 Users
-GET /api/users: Get all users
-GET /api/users/:userId: Get a single user by their ID
-POST /api/users: Create a new user
-PUT /api/users/:userId: Update a user by their ID
-DELETE /api/users/:userId: Delete a user by their ID
+- GET /api/users: Get all users
+- GET /api/users/:userId: Get a single user by their ID
+- POST /api/users: Create a new user
+- PUT /api/users/:userId: Update a user by their ID
+- DELETE /api/users/:userId: Delete a user by their ID
 
 ## License
 This project is licensed under the MIT license.
