@@ -20,18 +20,17 @@ module.exports = {
     }
   },
 
-  async getOneUser(req, res) {
+  async getUserById({ params }, res) {
     try {
-      const user = await User.findOne({ _id: req.params.userId })
-        .populate('friends')
-        .populate('thoughts')
-        .select('-__v');
+      const user = await User.findOne({ _id: params.userId }).select("-__v");
+
       if (!user) {
-        return res.status(404).json({ message: 'No user found with the provided ID' });
+        return res.status(404).json({ message: "Could not find user with that ID" });
       }
+
       res.json(user);
-    } catch (error) {
-      res.status(500).json({ error: "Something went wrong while trying to get user details" });
+    } catch (err) {
+      res.status(500).json({ message: "Failed to get user by ID" });
     }
   },
 
